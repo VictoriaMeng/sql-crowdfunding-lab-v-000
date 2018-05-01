@@ -39,7 +39,7 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
   INNER JOIN pledges
   ON projects.id = pledges.project_id
   GROUP BY name
-  ORDER BY amount DESC name DESC"
+  ORDER BY amount, name DESC"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
